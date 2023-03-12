@@ -1,0 +1,27 @@
+{
+    "host":"127.0.0.1",
+    "port":3306,
+    "admin":"boss",
+    "user":"isla",
+    "userpassword":"VTIz7bzj",
+    "dropUser":true,
+    "debug":true,
+    "database":"flowerdb",
+    "allowPublicKeyRetrieval": true,
+    "tables":[
+        {
+            "tableName":"flower",
+            "columns":[
+                "flowerId integer not null primary key",
+                "name varchar(27) not null",
+                "site varchar(20) not null",
+                "farmer varchar(44) not null",
+                "unitPrice integer not null"
+            ],
+            "data":[
+                [1,"Rose","xyz","abc",10],
+                [2, "Lily", "abc","xyz", 20]
+            ]
+        }
+    ]
+}

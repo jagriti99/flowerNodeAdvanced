@@ -1,0 +1,18 @@
+{
+    "getAll":["select flowerId,name,site,farmer,unitPrice from flower"],
+    "get":[
+        "select flowerId,name,site,farmer,unitPrice from flower",
+        "where flowerId=?"
+    ],
+    "insert":[
+        "insert into flower (flowerId, name, site, farmer, unitPrice)",
+        "values(?,?,?,?,?)"
+    ],
+    "update":[
+        "update flower set name=?, site=?, farmer=?, unitPrice=?",
+        "where flowerId=?"
+    ],
+    "remove":["delete from flower where flowerId=?"],
+    "primaryKey":"flowerId",
+    "resource":"flowers"
+}
